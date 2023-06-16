@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FiSearch } from 'react-icons/fi';
 import PropTypes from 'prop-types';
 import css from '../Searchbar/Searchbar.module.css';
