@@ -30,8 +30,8 @@ export const App = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  // const [showModal, setShowModal] = useState(false);
+  // const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     // if (name && page > 1) {
