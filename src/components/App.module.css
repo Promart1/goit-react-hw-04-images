@@ -1,0 +1,13 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding-bottom: 24px;
+}
+
+.text {
+  text-align: center;
+  color: #303f9f;
+  font-weight: 800;
+  font-size: 48px;
+}
