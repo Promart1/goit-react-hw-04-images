@@ -7,19 +7,19 @@ import { useEffect } from 'react';
 const modalRoot = document.querySelector('#modal-root');
 
 export const Modal = ({ onClose, url }) => {
-  const handleKeyDown = event => {
-    if (event.code === 'Escape') {
-      onClose();
-    }
-  };
-
   useEffect(() => {
+    const handleKeyDown = event => {
+      if (event.code === 'Escape') {
+        onClose();
+      }
+    };
+
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [handleKeyDown]);
+  }, [onClose]);
 
   const handleClick = event => {
     if (event.target === event.currentTarget) {
